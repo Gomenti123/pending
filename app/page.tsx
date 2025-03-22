@@ -14,6 +14,7 @@ const page = () => {
   const [name, setName] = useState("")
   const [tag, setTag] = useState("")
   const [amount, setAmount] = useState("")
+  const [color, setColor] =useState("")
  const time = new Date()
 console.log();
  
@@ -24,6 +25,13 @@ console.log();
           <label>Name</label>
           <input onChange={(e)=>{setName(e.target.value)
           }} name='name' className='border' type="text" />
+        </div>
+        <div className='flex flex-col'> 
+          <label>Color</label>
+          <input onChange={(e)=>{setColor(e.target.value), console.log(typeof(e.target.value)
+          );
+          
+          }} type="color" />
         </div>
         <div className='flex flex-col'>
           <label>Tag</label>
@@ -47,7 +55,7 @@ console.log();
         <BsThreeDots className='text-white text-[20px]'/>
         </div>
         <div className='flex justify-center'>
-        <div className='rounded-full bg-green-300 h-[50px] w-[50px] flex justify-center items-center'>
+        <div style={{backgroundColor: color}}  className='rounded-full  h-[50px] w-[50px] flex justify-center items-center'>
           <p className='text-white text-[23px] font-semibold'>{name.trim().charAt(0)}</p>
         </div>
         </div>
@@ -116,7 +124,7 @@ console.log();
           <p className='text-white font-semibold text-[19px]'>Pending</p>
           <div className='flex justify-between gap-3 text-white w-full '> 
             <div className='flex gap-3'>
-            <div className='bg-green-300 rounded-full flex justify-center items-center h-[50px] w-[50px]'>
+            <div style={{backgroundColor: color}} className={`rounded-full flex justify-center items-center h-[50px] w-[50px]`}>
               <p className='font-semibold text-[29px]'>{name.trim().charAt(0)}</p>
             </div>
 
