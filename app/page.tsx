@@ -71,8 +71,8 @@ console.log();
       
     </div>
 
-    <div className='flex w-full p-5 justify-center items-center'>
-      <div className='bg-neutral-900 w-[430px] h-[350px] flex flex-col gap-3  p-5'>
+    <div className='flex w-full  h-screen justify-center items-center'>
+      <div className='bg-neutral-900 w-[380px] h-[350px] flex flex-col gap-3  p-5'>
         <div className='flex justify-between'>
         <p className='text-white text-[20px] font-semibold '>Activity</p>
         <FaRegUser className='text-white font-semibold text-[20px]' />
@@ -109,12 +109,7 @@ console.log();
           </div>
           <p className='text-white'>Lucky</p>
           </div>
-          <div className='flex gap-1 flex-col items-center justify-center'>
-          <div className='bg-green-400 rounded-full w-[65px] h-[65px]'>
-          <Image className='rounded-full h-full w-full' src={img4} width={100} alt='#' />
-          </div>
-          <p className='text-white'>Karolin</p>
-          </div>
+         
         </div>
 
         <div className='flex flex-col gap-4 mt-[10px]'>
