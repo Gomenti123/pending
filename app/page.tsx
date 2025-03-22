@@ -45,7 +45,7 @@ console.log();
           <p className='text-white text-[23px] font-semibold'>{name.trim().charAt(0)}</p>
         </div>
         </div>
-        <p className='text-center text-white'>{name}</p>
+        <p className='text-center text-white font-semibold'>{name}</p>
         <p className='text-center text-neutral-400 text-[13px]'>Payment to {tag}</p>
 
 
