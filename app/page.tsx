@@ -71,7 +71,7 @@ console.log();
       
     </div>
 
-    <div className='flex w-full justify-center items-center'>
+    <div className='flex w-full p-5 justify-center items-center'>
       <div className='bg-neutral-900 w-[430px] h-[350px] flex flex-col gap-3  p-5'>
         <div className='flex justify-between'>
         <p className='text-white text-[20px] font-semibold '>Activity</p>
