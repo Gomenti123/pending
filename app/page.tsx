@@ -127,7 +127,6 @@ const page = () => {
                   <p className="text-white text-[23px] font-semibold">
                     {name.trim().charAt(0)}
                   </p>
-                  <img src="" alt="" />
                 </div>
               )}
             </div>
@@ -214,14 +213,29 @@ const page = () => {
             <p className="text-white font-semibold text-[19px]">Pending</p>
             <div className="flex justify-between gap-3 text-white w-full ">
               <div className="flex gap-3">
-                <div
+                {image ? (
+                  <img
+                    src={image}
+                    className="rounded-full w-[45px] h-[45px] object-cover"
+                  />
+                ) : (
+                  <div
+                    style={{ backgroundColor: color }}
+                    className="rounded-full  h-[50px] w-[50px] flex justify-center items-center"
+                  >
+                    <p className="text-white text-[23px] font-semibold">
+                      {name.trim().charAt(0)}
+                    </p>
+                  </div>
+                )}
+                {/* <div
                   style={{ backgroundColor: color }}
                   className={`rounded-full flex justify-center items-center h-[50px] w-[50px]`}
                 >
                   <p className="font-semibold text-[29px]">
                     {name.trim().charAt(0)}
                   </p>
-                </div>
+                </div> */}
 
                 <div>
                   <div className="flex justify-between">
